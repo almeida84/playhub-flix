@@ -1,2 +1,18 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# AVideo .gitattributes file.
+
+# Refer to:
+# https://help.github.com/articles/dealing-with-line-endings/
+
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Refer to:
+# https://github.com/github/linguist
+
+*.md linguist-documentation
+*.txt linguist-documentation
+
+.github/* -linguist-detectable
+.vscode/* -linguist-detectable
+node_modules/* -linguist-detectable
+vendor/* -linguist-detectable
